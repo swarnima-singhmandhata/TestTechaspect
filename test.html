@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Product Information</title>
+</head>
+<body>
+
+<?php if(isset($_POST["Submit"])){ ?>
+<div class="contact"><fieldset class="contact-inner">
+<p class="contact-input">
+
+	Product Name : <?php echo $_POST["pname"]; ?>
+</p>
+
+<p class="contact-input">
+
+	Price : <?php echo $_POST["price"];?>
+ </p>
+
+<p class="contact-input">
+
+	Category : <?php echo $_POST["Category"];?>
+ </p>
+<p class="contact-input">
+
+	Quantity : <?php echo $_POST["quantity"];?>
+ </p>
+<p class="contact-input">
+
+	Purchase Date : <?php echo $_POST["pdate"];?>
+ </p>
+<p class="contact-input">
+
+	Expiry Date : <?php echo $_POST["edate"];?>
+ </p>
+
+</fieldset></div>
+<?php } else{ ?>
+
+<form action= "test1.html" class="Contact" method = "post">
+
+
+<fieldset class="contact-inner"><p align="center" style="font-
+size:20px"> Enter Information</p>
+
+	<p class="contact-input">
+	Product Name :<input type="text" name="pname"><br><br></p>
+<p class="contact-input">
+	Price 	     :<input type="text" name="price"><br><br></p>
+<p class="contact-input">
+	Category     :<input type="text" name="category"><br><br></p>
+<p class="contact-input">
+	Quantity     :<input type="text" name="quantity"><br><br></p>
+<p class="contact-input">
+	Purchase Date:<input type="date" name="pdate"><br><br></p>
+<p class="contact-input">
+	Expiry Date  :<input type="date" name="edate"><br><br></p>
+<p class="contact-submit">
+	<input type = "Submit" value = "Submit"></button></p>
+
+</fieldset></form> 
+
+<?php }
+?>
+
+
+</body>
+
+</html>
+
+	
